@@ -1,7 +1,12 @@
 n := 30000000.0 we cant use walrus Op here it is not allowed in global scope
-we are allowed to use := in a method only
+
+we are allowed to use := in a method/func only
+
+have to use "var/const" in global scope
 
 using captial "J" or any capital letter in a var/method declaration 
 we are declaring that var/method as public 
-same as some -> public const Jukk =" blahblah"
+
+same as some -> public const Junk =" blahblah"
+
 public declaration mean we can even access this var in any file under same dir

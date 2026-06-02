@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	welcome := "welcome to user input"
+	welcome := "welcome to GO"
 	fmt.Println(welcome)
 
 	reader:= bufio.NewReader(os.Stdin)
@@ -16,7 +16,11 @@ func main() {
 	// comma OK || err OK
 
 	input ,_ := reader.ReadString('\n')
-	fmt.Println("thanks for rating,",input)
-	fmt.Printf("type of input %T ,",input)
+	fmt.Println("price is,",input)
+	fmt.Printf("type of input %T \n",input)
+
+	_,err := reader.ReadString('\n')
+	fmt.Println("err is:",err)
+	fmt.Printf("err type is %T:",err)
 
 }

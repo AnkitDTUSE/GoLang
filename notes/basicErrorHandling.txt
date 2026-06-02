@@ -1,0 +1,8 @@
+if err!=nil{
+    fmt.Println(err)
+    // or use panic(err) to exit the program
+}else{
+    fmt.Println("Added 1 to Input:",changedInput+1)
+}
+
+use this code for handling flow of execution is a Error Prune environment

@@ -1,4 +1,4 @@
-Go dont have any try catch block for error/exception handling 
+Go dont have any {try catch} block for error/exception handling 
 here we use commaOk or err ok statements
 
 reader:= bufio.NewReader(os.Stdin)
@@ -9,9 +9,11 @@ comma OK || err OK
 	input ,err := reader.ReadString('\n')
 
 "input" is user input
+"input" is of type String by default
 
 "err" is the error encountered (if any) during i/o 
 
 _, err used for input dont care but error
 input, _ input but dont care error 
 
+**if there is no "err" then by default err if <nil> and type is <nil>**

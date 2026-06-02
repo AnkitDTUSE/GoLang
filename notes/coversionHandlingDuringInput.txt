@@ -1,0 +1,11 @@
+input,_ := reader.ReadString('\n')
+
+as "input" is string we cant perform any operation but string ones
+
+so to convert this "input" in other data types we use  library "STRCONV"
+strconv.Parse___(variable,bit size); convert giving variable in the parsed datatype
+
+but most of the time "input" might end up with '\n' or spaces and parsing this type of input cause an error
+so we use library "STRINGS" to use string funcs on the "input", TRIM func in particular to trim the "input"
+
+then we can perform our desired operation on the "input"
