@@ -1,0 +1,17 @@
+Go dont have any try catch block for error/exception handling 
+here we use commaOk or err ok statements
+
+reader:= bufio.NewReader(os.Stdin)
+	fmt.Println("enter the price: ")
+	
+comma OK || err OK
+
+	input ,err := reader.ReadString('\n')
+
+"input" is user input
+
+"err" is the error encountered (if any) during i/o 
+
+_, err used for input dont care but error
+input, _ input but dont care error 
+
