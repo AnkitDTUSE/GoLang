@@ -1,0 +1,19 @@
+to get access to time in GO we use time package
+
+-> presentTime := time.Now() // gives the current time 
+-> output := 2026-06-02 21:55:31.3146472 +0530 IST m=+0.000000001
+
+fmt.Println(presentTime.Format("01-02-2006 15:04:05 Monday"))
+
+-> presentTime.Format() is used to format the time as per our NewReader
+-> need to memorize these values, as part of the syntax
+
+-> Format("02-01-2006 15:04:05 Monday ")
+-> here 02 depicts the date, 01 month, 2006 year, Monday the day and 15:04:05 hr:min:scope
+-> there is no correlation in b/w 02 for date and the current date , it is just the part of the syntax for the formatting and similarly for others
+
+createdDate := time.Date(2006,time.November,4,12,10,56,0,time.UTC)
+-> we can create our own date time using time.Date()
+-> here syntax is Date(year int, time.month, date int,hr int,min int,sec int,nanoSec int,*time.location) use UTC for location (as for now)
+
+
