@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-// jwtToken := 30000000.0 we cant use walrus Op here it is not allowed in global scope
+// n := 30000000.0 we cant use walrus Op here it is not allowed in global scope
 // we are allowed to use := in a method only
 
-const LoginToken string = "eghj2345"
-// note using captial "L" or any capital letter in a var/method declaration 
+const Junk string = "eghj2345"
+// note using captial "J" or any capital letter in a var/method declaration 
 // we are declaring that var/method as public 
-// same as some -> public const LoginToken =" blahblah"
+// same as some -> public const Jukk =" blahblah"
 // public declaration mean we can even access this var in any file under same dir
 
 func main() {
@@ -37,8 +37,8 @@ func main() {
 	var website = "https://www.google.com" //implicit coversion
 	fmt.Println(website)
 
-	noOfUser := 300000
-	fmt.Println(noOfUser)
+	n := 300000
+	fmt.Println(n)
 
-	fmt.Println(LoginToken)
+	fmt.Println(junk)
 }
