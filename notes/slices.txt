@@ -1,4 +1,11 @@
-Slices are something similar to VECTORS in cpp
+An array has a fixed size. A slice, on the other hand, is a dynamically sized
+flexible view into the elements of an array
+
+A slice does not store any data, it just describes a section of an underlying array.
+Changing the elements of a slice modifies the corresponding elements of its underlying array.
+Other slices that share the same underlying array will see those changes.
+
+A slice is formed by specifying two indices, a low and high bound, separated by a colon : a[low : high]
 
 type of slice is []T " T is datatype "
 
@@ -7,10 +14,6 @@ the rule is (low<=high<=max<=backingArray size)
 
 A backing array is the actual array in memory that a slice points to
 
-In Go, a slice is not the data itself, a slice is a small descriptor containing
-pointer -> backing array
-length
-capacity
 
 Conceptually (not actual Go code)
 
