@@ -1,0 +1,26 @@
+Slices are something similar to VECTORS in cpp
+
+type of slice is []T " T is datatype "
+
+to create a slice from a slice using [low:high:max]
+the rule is (low<=high<=max<=backingArray size)
+
+A backing array is the actual array in memory that a slice points to
+
+In Go, a slice is not the data itself, a slice is a small descriptor containing
+pointer -> backing array
+length
+capacity
+
+Conceptually (not actual Go code)
+
+    backingArray := [5]int{1, 2, 3, 4, 5}
+
+    mySlice := Slice{
+        ptr: &backingArray[0],
+        len: 5,
+        cap: 5,
+    }   
+    mySlice is the slice descriptor. ("mySlice has a backing array")
+    Go has created an unnamed backing array for it.
+    That backing array stores the actual elements.

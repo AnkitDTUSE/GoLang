@@ -1,0 +1,11 @@
+declarations:-
+    var arr [n]T // zero valued (if T is int then all 0 , if T is string then empty string "")
+    var arr = [n]T{""} //declaration with initialization
+    arr := [n]T{} //declaration and intialization via walrus operator
+
+type of array in GO is
+    [n]T where "n" is size of array and T is Datatype 
+    ex:- [3]int and [5]int are two entirely diff, incompatible data types in GO
+    In Go, incompatible means you cannot assign them to each other, compare them directly, or use them interchangeably in functions.
+
+size of array is remain constant(the size that was assigned at the declaration ,can be determined by len()) even if there lesser element in the array
