@@ -1,0 +1,12 @@
+Command line arguments are inputs or parameters passed to a program
+when it is executed from a terminal or command prompt.
+They allows the user to control a program's behavior from 
+the outside without hardcoding values into the source code
+
+Purpose: Used to provide file names, configuration values, 
+    or operational flags (like -v for verbose) during runtime.
+
+Format: Typically follows the syntax: executable arg1 arg2 arg3.
+
+Data Type: In almost all languages, 
+    these arguments are initially received as strings
