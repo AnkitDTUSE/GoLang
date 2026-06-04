@@ -27,3 +27,7 @@ Conceptually (not actual Go code)
     mySlice is the slice descriptor. ("mySlice has a backing array")
     Go has created an unnamed backing array for it.
     That backing array stores the actual elements.
+
+--> During appending:
+If the backing array of "s" is too small to fit all the given values a bigger array will be allocated. 
+The returned slice will point to the newly allocated array.

@@ -1,0 +1,12 @@
+maps are key value pair in GO
+
+(map[key]value) -> declaration // key and value are datatypes during declaration
+
+map[key] = value ->initialization
+
+map, array, slices all are WHITE SPACE seperated in GO not comma seperated
+
+The zero value of a map is nil. A nil map has no keys, nor can keys be added.
+
+If "key" is not in the map, then "elem" is the zero value for the map's element type.
+

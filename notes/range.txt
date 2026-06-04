@@ -1,0 +1,3 @@
+When ranging over a slice, two values are returned for each iteration. The first is the index, and the second is a copy of the element at that index.
+
+In case of maps it returns KEY, VALUE 
