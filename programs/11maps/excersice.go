@@ -2,7 +2,6 @@ package main
 
 import (
 	"strings"
-	"golang.org/x/tour/wc"
 )
 
 func WordCount(s string) map[string]int {
@@ -14,8 +13,4 @@ func WordCount(s string) map[string]int {
 	}
 
 	return count
-}
-
-func main() {
-	wc.Test(WordCount)
 }

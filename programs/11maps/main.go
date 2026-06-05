@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"golang.org/x/tour/wc"
+)
 
 func main() {
 	fmt.Println("maps")
@@ -43,5 +46,10 @@ func main() {
 	// Test that a key is present with a two-value assignment:
 
 	_,ok :=m[5]
-	fmt.Println(ok) 
+	fmt.Println(ok)
+
+	wc.Test(WordCount) // need to run -> go run . (this will trigger all files under the same package) or go run main.go excersice.go
+
+	// note WordCount can be named as wordCount as main and wordCount are now under same dir , but if we need to use wordCount outside the current package then name it WordCount
+	 
 }
