@@ -1,0 +1,19 @@
+Functions are values too.
+They can be passed around just like other values
+Function values may be used as function arguments and return values
+
+Go functions may be closures. (similar to what closure is in JS (javaScript))
+A closure is a function value that references variables from outside its body.
+The function may access and assign to the referenced variables; in this sense the function is "bound" to the variables.
+
+closure1 := {
+    sum: 0,
+    fn: func(x int) int {
+        closure1.sum += x
+        return closure1.sum
+    },
+}
+
+From an implementation perspective, this is called escape analysis.
+Since sum is needed after adder() returns,
+ the Go compiler typically allocates it on the heap instead of the stack, allowing it to outlive the function call.
