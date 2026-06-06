@@ -1,0 +1,16 @@
+In Go we have only 1 looping Keyword
+"FOR"
+
+we can handle For in GO in many ways
+
+1.classic for loop -> for i:=0;i<n;i++{}
+
+2.without initializer (need to init the condn variable before hand)-> for ;i<n;{}
+
+3.for as While -> for i<n{}
+
+4.for as Infinte loop (forever ) -> for {}
+
+5.for with ranges -> 5.1 slices -> for index,val := range slice{}
+                  -> 5.2 maps -> for key,value:= range map{}
+                  

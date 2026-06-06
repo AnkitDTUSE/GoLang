@@ -1,0 +1,19 @@
+Functions in GO behaves like in any other language
+
+Func signature -> func <name>()<return type>{}
+
+we can have more than 1 return type at once , but then we need to wrap them in ()
+ex func add (x,y int)(int,float){}
+
+here x,y int is a short hand to write x int, y int 
+we can use this shortHand when there are consecutive similar type of vars
+
+if we are uncertain about the number of arugements passed to a Func
+we can use VARIADIC parameter (...)
+all values passed to that variadic parameter must be of the same type
+
+ex func add (vals ...int)int{}
+
+METHODS 
+In Go, a method is just a function that is associated with a specific type.
+ex type struct

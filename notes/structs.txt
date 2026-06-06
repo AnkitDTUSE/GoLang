@@ -1,0 +1,18 @@
+-> Is GO a OOP language?
+Yes and no; 
+Go allows an object-oriented style of programming,
+but it is not a traditional class-based object-oriented language.
+
+-> GO has
+Methods, Encapsulation, polymorphism
+
+-> But doesnt has
+Classes, Inheritance
+
+-> To achive OOP 
+Go relies on a unique combination of structures and interfaces 
+to achieve the structural benefits of Object-Oriented Programming 
+
+-> structs 
+A struct (short for "structure") in Go is a user-defined type that 
+allows us to bundle related fields of different data types together
