@@ -2,6 +2,8 @@ package main
 
 import ("fmt")
 
+// GO has no pointer arithmetics like C
+
 func main(){
 	fmt.Println("Pointers")
 	

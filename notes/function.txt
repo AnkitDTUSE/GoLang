@@ -14,6 +14,3 @@ all values passed to that variadic parameter must be of the same type
 
 ex func add (vals ...int)int{}
 
-METHODS 
-In Go, a method is just a function that is associated with a specific type.
-ex type struct

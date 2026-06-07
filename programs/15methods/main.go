@@ -8,6 +8,9 @@ func main() {
 	fmt.Println(ankit.Email)
 	ankit.NewEmail()
 	fmt.Println(ankit.Email)
+
+	// calling func from another file
+	MyMethods()
 }
 
 type User struct {

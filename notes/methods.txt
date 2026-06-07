@@ -1,0 +1,10 @@
+Go does not have classes.
+However, you can define methods on types (like struct or any other type).
+
+A method is a function with a special receiver argument. (in case of struct its the arugment of the struct type or pointer to struct type)
+
+The receiver appears in its own argument list between the func keyword and the method name.
+
+~ a method in GO can only have one receiver type ~
+
+ex -> func (s struct)<name>()<return type>{}
