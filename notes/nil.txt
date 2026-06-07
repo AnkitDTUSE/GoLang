@@ -1,0 +1,10 @@
+-> nil is only valid for types that can have a nil value:
+
+    pointers
+    interfaces
+    slices
+    maps
+    channels
+    functions
+
+A struct value is never nil

@@ -1,0 +1,49 @@
+At a general programming concept level, an interface is a contract that defines what behavior is available,
+without specifying how that behavior is implemented.
+
+for ex -> a power socket:
+    .The socket defines the interface (plug shape, voltage, etc.).
+    .Different devices (lamp, charger, fan) implement that interface differently.
+    .You can use any device through the same socket because they satisfy the interface.
+
+
+Interface = What can be done
+Implementation = How it is done
+
+for ex -> Vehicle
+           ├─ Start()
+           ├─ Stop()
+           └─ Accelerate()
+          Car implements Vehicle
+          Bike implements Vehicle
+          Truck implements Vehicle
+
+A type implements an interface by implementing its methods.
+There is no explicit declaration of intent, no "implements" keyword.
+
+Under the hood, interface values can be thought of as a tuple of a value and a concrete type:
+-> (value, type)
+
+EX ->
+    var p *paytm = nil
+
+    var a paymenter = p
+
+    fmt.Println(a == nil) -> false
+
+    because the interface contains:
+
+    a
+    ├── type  = *paytm
+    └── value = nil
+
+    The interface itself is not nil because its type component is not nil
+
+    /An interface is only nil when both are nil/
+    type  = nil
+    value = nil
+
+A nil interface value holds neither value nor concrete type.
+
+Calling a method on a nil interface is a run-time error 
+because there is no type inside the interface tuple to indicate which concrete method to call.
