@@ -8,3 +8,11 @@ type Stringer interface {
 
 It allows an object to define:
 "How should I be represented as a string?"
+
+conceptually Stringer works like this ->
+
+    if value implements fmt.Stringer {
+        print(value.String())
+    } else {
+        print(default representation)
+    }
