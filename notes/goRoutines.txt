@@ -1,0 +1,27 @@
+A goroutine is a lightweight thread managed by the Go runtime.
+
+approx ~2KB per thread, comparetively very smaller than OS threads which are of some MBs
+we can make hundreds of thousands of these goRountines
+
+go f(x, y, z) // to declare a go routine
+
+but remember -> whenever we make a process in a program a GO routine, it starts simulatenous in background with the main func()
+and the main func dont wait for the execution of any goroutine and simply exectue itself.
+-> This is a problem, as , as soon as main func() terminates all the go routines also terminates regardless of their flow
+
+-> This leads to an another problem, that we cant get the output of these routines as the main func() terminates before any of the routine terminate itself.
+
+So to fix this we have couple of ways:- 
+
+    1. can use time.Sleep() to make the termination of main func() slower 
+        {not recommended as we arent sure of the execution time of our program}
+
+    2. can use fmt.Scanln() as for the terminator of the main func()
+        {also not recommended as we dont want to make our program's termination dependent of any user Input}
+
+    3. can use wait Groups {highly used}
+
+-> Concurrency can lead to poor isolation and race conditions 
+    when multiple routines access and modify shared data simultaneously
+-> To prevent this issue, a mutex (mutual exclusion) lock can be used to ensure that only one routine accesses the shared data at a time
+
