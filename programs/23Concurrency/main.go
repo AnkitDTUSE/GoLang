@@ -73,7 +73,7 @@ func main() {
 	t1 := time.Now()
 	// create Go routine by "go" keyword
 
-	wg.Add(5) // as we have 3 go routines below
+	wg.Add(6) // as we have 3 go routines below
 
 	// go processOrders(orders)
 
@@ -85,7 +85,12 @@ func main() {
 
 	go func() { // making this IIF a go Routine
 		defer wg.Done() // this decerements the wg.Add() by 1
-		processOrders(orders)
+		processOrders(orders[:len(orders)/2])
+	}()
+
+	go func() {
+		defer wg.Done()
+		processOrders(orders[len(orders)/2:])
 	}()
 
 	for i := 0; i < 3; i++ {
